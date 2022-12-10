@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		5A3733B92944F688005BABA7 /* Finance_HubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3733B82944F688005BABA7 /* Finance_HubApp.swift */; };
-		5A3733BB2944F688005BABA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3733BA2944F688005BABA7 /* ContentView.swift */; };
 		5A3733BD2944F68A005BABA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A3733BC2944F68A005BABA7 /* Assets.xcassets */; };
 		5A3733C02944F68A005BABA7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A3733BF2944F68A005BABA7 /* Preview Assets.xcassets */; };
 		5A3733CA2944F68A005BABA7 /* Finance_HubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3733C92944F68A005BABA7 /* Finance_HubTests.swift */; };
 		5A3733D42944F68A005BABA7 /* Finance_HubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3733D32944F68A005BABA7 /* Finance_HubUITests.swift */; };
 		5A3733D62944F68A005BABA7 /* Finance_HubUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3733D52944F68A005BABA7 /* Finance_HubUITestsLaunchTests.swift */; };
+		5A3733E6294504D2005BABA7 /* HistoricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3733E5294504D2005BABA7 /* HistoricView.swift */; };
+		5A3733E929450DD5005BABA7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3733E829450DD5005BABA7 /* HomeView.swift */; };
+		5A3733EB29450E66005BABA7 /* CreateTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3733EA29450E66005BABA7 /* CreateTransactionView.swift */; };
+		5A3733ED29450EAF005BABA7 /* InsightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3733EC29450EAF005BABA7 /* InsightsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		5A3733B52944F688005BABA7 /* Finance Hub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Finance Hub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A3733B82944F688005BABA7 /* Finance_HubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finance_HubApp.swift; sourceTree = "<group>"; };
-		5A3733BA2944F688005BABA7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5A3733BC2944F68A005BABA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A3733BF2944F68A005BABA7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5A3733C52944F68A005BABA7 /* Finance HubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Finance HubTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +46,10 @@
 		5A3733CF2944F68A005BABA7 /* Finance HubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Finance HubUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A3733D32944F68A005BABA7 /* Finance_HubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finance_HubUITests.swift; sourceTree = "<group>"; };
 		5A3733D52944F68A005BABA7 /* Finance_HubUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finance_HubUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5A3733E5294504D2005BABA7 /* HistoricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricView.swift; sourceTree = "<group>"; };
+		5A3733E829450DD5005BABA7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5A3733EA29450E66005BABA7 /* CreateTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransactionView.swift; sourceTree = "<group>"; };
+		5A3733EC29450EAF005BABA7 /* InsightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +100,9 @@
 		5A3733B72944F688005BABA7 /* Finance Hub */ = {
 			isa = PBXGroup;
 			children = (
+				5A3733E72945060F005BABA7 /* Models */,
+				5A3733E2294504AA005BABA7 /* Screens */,
 				5A3733B82944F688005BABA7 /* Finance_HubApp.swift */,
-				5A3733BA2944F688005BABA7 /* ContentView.swift */,
 				5A3733BC2944F68A005BABA7 /* Assets.xcassets */,
 				5A3733BE2944F68A005BABA7 /* Preview Content */,
 			);
@@ -125,6 +132,24 @@
 				5A3733D52944F68A005BABA7 /* Finance_HubUITestsLaunchTests.swift */,
 			);
 			path = "Finance HubUITests";
+			sourceTree = "<group>";
+		};
+		5A3733E2294504AA005BABA7 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5A3733E5294504D2005BABA7 /* HistoricView.swift */,
+				5A3733E829450DD5005BABA7 /* HomeView.swift */,
+				5A3733EA29450E66005BABA7 /* CreateTransactionView.swift */,
+				5A3733EC29450EAF005BABA7 /* InsightsView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		5A3733E72945060F005BABA7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +282,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A3733BB2944F688005BABA7 /* ContentView.swift in Sources */,
+				5A3733E929450DD5005BABA7 /* HomeView.swift in Sources */,
+				5A3733ED29450EAF005BABA7 /* InsightsView.swift in Sources */,
 				5A3733B92944F688005BABA7 /* Finance_HubApp.swift in Sources */,
+				5A3733E6294504D2005BABA7 /* HistoricView.swift in Sources */,
+				5A3733EB29450E66005BABA7 /* CreateTransactionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

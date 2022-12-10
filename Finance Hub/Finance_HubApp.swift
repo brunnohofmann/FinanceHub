@@ -11,7 +11,20 @@ import SwiftUI
 struct Finance_HubApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                HomeView().tabItem{
+                    Label("", systemImage: "house.fill")
+                }
+                HistoricView().tabItem{
+                    Label("", systemImage: "calendar")
+                }
+                CreateTransactionView().tabItem{
+                    Label("", systemImage: "plus.square.fill")
+                }
+                InsightsView().tabItem{
+                    Label("", systemImage: "lightbulb.fill")
+                }
+            }
         }
     }
 }
