@@ -17,6 +17,10 @@
 		5A3733E929450DD5005BABA7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3733E829450DD5005BABA7 /* HomeView.swift */; };
 		5A3733EB29450E66005BABA7 /* CreateTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3733EA29450E66005BABA7 /* CreateTransactionView.swift */; };
 		5A3733ED29450EAF005BABA7 /* InsightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3733EC29450EAF005BABA7 /* InsightsView.swift */; };
+		5A8409D2296ADDF80045FD49 /* Outflows.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A8409D1296ADDF80045FD49 /* Outflows.json */; };
+		5A8409D4296AE2D70045FD49 /* Outflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8409D3296AE2D70045FD49 /* Outflow.swift */; };
+		5A8409D6296AE3140045FD49 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8409D5296AE3140045FD49 /* Currency.swift */; };
+		5A8409D9296AE4DB0045FD49 /* JsonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8409D8296AE4DB0045FD49 /* JsonUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,10 @@
 		5A3733E829450DD5005BABA7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		5A3733EA29450E66005BABA7 /* CreateTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTransactionView.swift; sourceTree = "<group>"; };
 		5A3733EC29450EAF005BABA7 /* InsightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsView.swift; sourceTree = "<group>"; };
+		5A8409D1296ADDF80045FD49 /* Outflows.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Outflows.json; sourceTree = "<group>"; };
+		5A8409D3296AE2D70045FD49 /* Outflow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Outflow.swift; sourceTree = "<group>"; };
+		5A8409D5296AE3140045FD49 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		5A8409D8296AE4DB0045FD49 /* JsonUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,8 @@
 		5A3733B72944F688005BABA7 /* Finance Hub */ = {
 			isa = PBXGroup;
 			children = (
+				5A8409D7296AE4D00045FD49 /* Utils */,
+				5A8409CE296ADD2F0045FD49 /* Data */,
 				5A3733E72945060F005BABA7 /* Models */,
 				5A3733E2294504AA005BABA7 /* Screens */,
 				5A3733B82944F688005BABA7 /* Finance_HubApp.swift */,
@@ -148,8 +158,26 @@
 		5A3733E72945060F005BABA7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5A8409D3296AE2D70045FD49 /* Outflow.swift */,
+				5A8409D5296AE3140045FD49 /* Currency.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5A8409CE296ADD2F0045FD49 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5A8409D1296ADDF80045FD49 /* Outflows.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5A8409D7296AE4D00045FD49 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5A8409D8296AE4DB0045FD49 /* JsonUtils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A8409D2296ADDF80045FD49 /* Outflows.json in Resources */,
 				5A3733C02944F68A005BABA7 /* Preview Assets.xcassets in Resources */,
 				5A3733BD2944F68A005BABA7 /* Assets.xcassets in Resources */,
 			);
@@ -282,10 +311,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A8409D4296AE2D70045FD49 /* Outflow.swift in Sources */,
 				5A3733E929450DD5005BABA7 /* HomeView.swift in Sources */,
 				5A3733ED29450EAF005BABA7 /* InsightsView.swift in Sources */,
 				5A3733B92944F688005BABA7 /* Finance_HubApp.swift in Sources */,
 				5A3733E6294504D2005BABA7 /* HistoricView.swift in Sources */,
+				5A8409D9296AE4DB0045FD49 /* JsonUtils.swift in Sources */,
+				5A8409D6296AE3140045FD49 /* Currency.swift in Sources */,
 				5A3733EB29450E66005BABA7 /* CreateTransactionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +477,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Finance Hub/Preview Content\"";
+				DEVELOPMENT_TEAM = F5FFDFG3PM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -473,6 +506,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Finance Hub/Preview Content\"";
+				DEVELOPMENT_TEAM = F5FFDFG3PM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
