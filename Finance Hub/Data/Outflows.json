@@ -1,0 +1,31 @@
+[{
+    "category": "Transport",
+    "summary" : [{
+        "subcategory" : "Uber",
+        "amount": 1000,
+        "currency": {
+            "name": "Brazilian Real",
+            "initials": "BRL",
+            "symbol": "R$"
+        }
+    }]
+},{
+    "category": "Online Shopping",
+    "summary" : [{
+        "subcategory" : "Amazon.DE",
+        "amount": 800,
+        "currency": {
+            "name": "Euro",
+            "initials": "EUR",
+            "symbol": "€"
+        }
+    },{
+        "subcategory" : "Amazon.BR",
+        "amount": 300,
+        "currency": {
+            "name": "Brazilian Real",
+            "initials": "BRL",
+            "symbol": "R$"
+        }
+    }]
+}]
